@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <header class="bg-blue-600 text-white py-4">
+        <nav class="container mx-auto flex justify-center space-x-8">
+            <a href="#about" class="hover:text-yellow-400">About Me</a>
+            <a href="#skills" class="hover:text-yellow-400">Skills</a>
+            <a href="#projects" class="hover:text-yellow-400">Projects</a>
+            <a href="#contact" class="hover:text-yellow-400">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container mx-auto p-8 text-center">
+        <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+        <p class="text-xl mb-6">Hi, as a recent graduate in Information Technology, I bring a solid foundation in computer science principles and a keen understanding of software development, networking, and database management. My academic projects have honed my ability to solve complex problems with innovative solutions, using programming languages like Java, Python, and C. I am adaptable and eager to learn, with a passion for staying updated on the latest tech trends and tools. Through internships and hands-on experience, I’ve developed strong teamwork and communication skills, ensuring effective collaboration in diverse environments. I’m excited to apply my knowledge and contribute to impactful projects in a dynamic IT setting.</p>
+        <p class="text-lg">Check out my skills, projects, and feel free to reach out!</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="bg-blue-500 text-white p-6 rounded-lg shadow-lg w-40">
+                    <h3 class="text-lg font-medium">HTML5</h3>
+                </div>
+                <div class="bg-blue-500 text-white p-6 rounded-lg shadow-lg w-40">
+                    <h3 class="text-lg font-medium">CSS3</h3>
+                </div>
+                <div class="bg-blue-500 text-white p-6 rounded-lg shadow-lg w-40">
+                    <h3 class="text-lg font-medium">JavaScript</h3>
+                </div>
+                <div class="bg-blue-500 text-white p-6 rounded-lg shadow-lg w-40">
+                    <h3 class="text-lg font-medium">my sql</h3>
+                </div>
+                <div class="bg-blue-500 text-white p-6 rounded-lg shadow-lg w-40">
+                    <h3 class="text-lg font-medium"> Java</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto p-8 text-center">
+        <h2 class="text-3xl font-semibold mb-8">My Projects</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Project 1</h3>
+                <p class="text-lg mb-4">Description of the project goes here.</p>
+                <button onclick="viewProject('project2')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">View Project</button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Project 2</h3>
+                <p class="text-lg mb-4"> Highlighted the react technology in this project and thier impact.</p>
+                <button onclick="viewProject('project2')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">View Project</button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Project 3</h3>
+                <p class="text-lg mb-4"> view the basic java project and their result.</p>
+                <button onclick="viewProject('project2')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">View Project</button>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Contact Me</h2>
+            <form id="contactForm" class="w-full max-w-md mx-auto">
+                <input type="text" id="name" placeholder="Thenmozhi Palanisamy" class="w-full p-3 mb-4 rounded-md" required />
+                <input type="email" id="email" placeholder="thenmozhipalanisamy2005@gmail.com" class="w-full p-3 mb-4 rounded-md" required />
+                <textarea id=contact_no placeholder=9944736176 class="w-full p-3 mb-4 rounded-md" rows="1" required></textarea>
+                <button type="submit" class="bg-yellow-400 text-white py-2 px-6 rounded-md hover:bg-yellow-500">Send Message</button>
+            </form>
+            <div id="formMessage" class="mt-4"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; Thenmozhi palanisamy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
